@@ -2,6 +2,7 @@
 import { createMedia } from '@artsy/fresnel'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
+
 import {
   Button,
   Container,
@@ -157,8 +158,8 @@ class MobileContainer extends Component {
               Home
             </Menu.Item>
             {/*<Menu.Item as='a'>Work</Menu.Item>
-            <Menu.Item as='a'></Menu.Item>
-    <Menu.Item as='a'>Careers</Menu.Item>*/}
+            <Menu.Item as='a'></Menu.Item>*/}
+    <Menu.Item as='a'>Organizations</Menu.Item>
             <Menu.Item as='a'>Search</Menu.Item>
             <Menu.Item as='a'>Log Out</Menu.Item>
           </Sidebar>
