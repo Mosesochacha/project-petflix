@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import {
   Button,
   Container,
+  Dropdown,
   //Divider,
   Grid,
   Header,
@@ -99,7 +100,7 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
-                <Menu.Item as='a' active>
+                <Menu.Item position='' as='a' active>
                   Home
                 </Menu.Item>
                {/* <Menu.Item as='a' active>Organizations</Menu.Item>*/}
@@ -108,6 +109,7 @@ class DesktopContainer extends Component {
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
                     Search
+                    <Dropdown/>
                   </Button>
                   <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     Log Out
@@ -174,9 +176,7 @@ class MobileContainer extends Component {
                     <Icon name='sidebar' />
                   </Menu.Item>
                   <Menu.Item position='right'>
-                    <Button as='a' inverted>
-                      Search
-                    </Button>
+                   <Dropdown/>
                     <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
                       Log Out
                     </Button>
