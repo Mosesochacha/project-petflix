@@ -1,0 +1,36 @@
+.animalDiv {
+    background-color: #1B1C1D;
+
+}
+
+.animalTypeUl {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    justify-content: space-around;
+}
+
+
+.animalCardUl {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0px auto 0px auto;
+    justify-content: space-around;
+
+}
+
+
+
+.animalCardLi {
+    width: 25%;
+    border: thin solid gray;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(227, 188, 188, 0.75);
+    border-radius: 10px;
+
+}
