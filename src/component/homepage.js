@@ -42,7 +42,7 @@ const HomepageHeading = ({ mobile }) => (
         fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',
         marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
+        marginTop: mobile ? '3.5em' : '5em',
       }}
     />
     <Header
@@ -217,7 +217,7 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    {/*<Segment style={{ padding: '8em 0em' }} vertical>
       {/* <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
@@ -266,35 +266,28 @@ const HomepageLayout = () => (
 </p>*
           </Grid.Column>
         </Grid.Row>
-</Grid> */}
+</Grid> 
 
 
 
 
-Animal collection comes here
 
 
 
 
-    </Segment>
+</Segment>*/}
 
   {/*fooooter*/}
 
-    <Segment inverted vertical style={{ padding: '3em 0em', textAlign: 'centre' }}>
-      <Container>
+    <Segment inverted vertical style={{ padding: '8em 0em', textAlign: 'centre' }}>
+     {/*} <Container>
         <div className='container'>
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
-              <Header inverted as='h4' content='About'/>
-              <List link inverted>
-                <List.Item as='a'></List.Item>
-                <List.Item as='a'>Contact </List.Item>
-                <List.Item as='a'></List.Item>
-                <List.Item as='a'></List.Item>
-              </List>
+          
             </Grid.Column>
-          {/*  <Grid.Column width={3}>
+           <Grid.Column width={3}>
               <Header inverted as='h4' content='Services' />
               <List link inverted>
                 <List.Item as='a'>Banana</List.Item>
@@ -302,13 +295,13 @@ Animal collection comes here
                 <List.Item as='a'>How To Access</List.Item>
                 <List.Item as='a'>Favorite X-Men</List.Item>
 </List>
-</Grid.Column>*/}
+</Grid.Column>
           
           </Grid.Row>
         </Grid>
         </div>
-      </Container>
-    </Segment>
+</Container>*/}
+</Segment>
   </ResponsiveContainer>
 )
 
