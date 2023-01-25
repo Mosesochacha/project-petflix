@@ -106,6 +106,8 @@ class DesktopContainer extends Component {
                 </Menu.Item>
                {/* <Menu.Item as='a' active>Organizations</Menu.Item>*/}
                <Menu.Item as='a' active>Organizations</Menu.Item>
+               <Menu.Item as='a' active>Animals</Menu.Item>
+
    {/* <Menu.Item as='a'>Careers</Menu.Item>*/}
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
