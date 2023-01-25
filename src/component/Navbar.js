@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar bg-primary">
+    <nav className="navbar">
       <div className="container-fluid" >
         <Link className="navbar-brand" to="/">Home</Link>
         <Link className="navbar-brand" to="/animals/">Animals</Link>
@@ -11,6 +11,10 @@ function Navbar() {
       <Link className="navbar-brand"  to="/organizations">Organizations</Link>
       
       <Link className="navbar-brand" to="/categories">Animal Catergories</Link>
+      <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+   <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
       </div>
       
     

@@ -50,8 +50,26 @@
   font-size: calc(10px + 2vmin);
   
 }
+#Cat{
+  background-color: bisque;
+}
 .App-link {
   color: #61dafb;
 }
-
+.navbar{
+  background-color: bisque;
+  font-size: 13vh;
+  color: aquamarine;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.container-fluid{
+  font-size: 13vh;
+  padding-top: 2px;
+  padding-bottom: 1px; 
+  
+}
 

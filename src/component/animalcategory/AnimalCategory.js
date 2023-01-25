@@ -24,7 +24,7 @@ function AnimalCategory({
 
   const animalTypeBtn = animalTypes.types.map((animalType, index) => {
     return (
-      <li key={"type" + index}>
+      <li key={"type" + index} id= "Cat">
         <button onClick={(e) => setType(e.target.innerText)}>
           {" "}
           {animalType.name}{" "}
