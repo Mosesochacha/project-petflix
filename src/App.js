@@ -6,6 +6,9 @@ import Navbar from "./component/Navbar";
 import AnimalTypes from "./component/animaltype/AnimalType";
 import AnimalDetails from "./component/animaldetails/AnimalDetails";
 import AnimalCategory from "./component/animalcategory/AnimalCategory";
+import LogIn from "./component/login/login";
+import SignUp from "./component/signup/SignUp";
+
 
 function App() {
   const [animalTypes, setAnimalTypes] = useState([]);
@@ -18,8 +21,8 @@ function App() {
 
   // curl -d "grant_type=client_credentials&client_id=TBUWjfxlzXKspuMgyLyTavDjNWaj0hrPRy1x3nFBACqlc6swLs&client_secret=n3x8Phb9OYqLL1rdWtaJFdtn3KUgAmUzYyauP9yz" https://api.petfinder.com/v2/oauth2/token
 
-  const token =
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJUQlVXamZ4bHpYS3NwdU1neUx5VGF2RGpOV2FqMGhyUFJ5MXgzbkZCQUNxbGM2c3dMcyIsImp0aSI6IjE0NDFiNzhkNDJiM2U5NDEzODNhMDEyZDhiMjVhN2M1MzcyNDg4ODU5ZDg0NDNjOGQ3NzljNzE0OTQ3OGNhYTg1N2RkYTM0NjgzMWZjYTExIiwiaWF0IjoxNjc0NjMwMzU5LCJuYmYiOjE2NzQ2MzAzNTksImV4cCI6MTY3NDYzMzk1OSwic3ViIjoiIiwic2NvcGVzIjpbXX0.dwuNNsqaLmsFAuc3h9yG8_rEvV_D2EIYYcfUk-dXQB8tPK3QP76zHh0L59fZGmwmJmdiWstHGTcuoRvKBT3BTseF9lKthFRBJWETHI-Ag1GHgFEEabl9S_nPhL1fLWeCnBsoj9Xs6sloEpWwqpNWY3RwMECScB5Lt0c6iZaKywsqlqGNoODQT9-u3YWNK5wkN3F9StuAlEemRvCWHiXtubPuwRSEY2p-e5PKnMfV8cCYVU8BPHOu1_Xu6R0SDY2vgEE82t_CEyQk4DzFxpzPU_2wHCG0OLXKAMGNuGzcBQ2FzG1saB4nojqiCA3lfvlZyrb7570pNb-v5IhwJpWByg";
+  const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJUQlVXamZ4bHpYS3NwdU1neUx5VGF2RGpOV2FqMGhyUFJ5MXgzbkZCQUNxbGM2c3dMcyIsImp0aSI6ImJkMjlkYzE0MDMzNDJiMDVjZjUzZWU1M2RiZWZhNjY2ODhhNjIyNzZhYzZmNTdjNTA1NGFjZGE4YzlmZTE1MWYyZDcwZDhhMDI3NWMxMzdmIiwiaWF0IjoxNjc0NjM5MDg5LCJuYmYiOjE2NzQ2MzkwODksImV4cCI6MTY3NDY0MjY4OSwic3ViIjoiIiwic2NvcGVzIjpbXX0.liQA9wBT72IvujOmctSOHwBuh4WbBEVANG8eUT8DdyLOzg6Vz7BSo3Dl8rltJ5elwQeRaaLkqZdy1H5qGiICsWWuvceYweTqX8ZSY-Z_67lxRGh1r0jsvRKlhPmCjqBTpQBqeeVv5ONWQwo6XZt0T7mgMP4V_LHqW2NEKZMw-h4zw8RyEqP9ZvnPdSKBk8wL1CgwmeDTyHg2HvR-0YFIilTcqeRNrJ--Mk8CiaQ__xtd26YBqJwjuYByjupj2j5DOzQ4XyB3aZ0Rc_pOXCfbQ5y28xi8TzNawW8JTFRSFbpy2z3MSXB9_WGEl-dmSaxvrDCcLw4gfWv5iqri7SaIyg"  
+  
   useEffect(() => {
     //Animals
     fetch(`https://api.petfinder.com/v2/animals?limit=100`, {
@@ -70,8 +73,15 @@ function App() {
       <BrowserRouter>
         <Navbar />
 
+        
+
         <Routes>
-          <Route exact path="/" element={<HomepageLayout />} />
+        <Route exact path='/register' element={< SignUp />}/>
+
+
+        <Route exact path='/' element={<LogIn/>}/>
+
+          <Route exact path="/home" element={<HomepageLayout />} />
           <Route
             exact
             path="/animals/"
