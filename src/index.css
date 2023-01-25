@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container{
+  text-align: start;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: Times New Roman;
+  font-size: 16px;
+}
+
+.list-group{
+  position: relative;
+}
+
+.btn{
+  position: absolute;
+  right: 1em;
+  color: blue;
+  background-color: azure;
+  border: none;
+  cursor: pointer;
+}
