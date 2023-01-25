@@ -7,8 +7,8 @@ function AnimalCategory({
   searchValue,
   setSearchValue,
 }) {
-  console.log(animalTypes);
-  console.log(currentBreeds.breeds[0]);
+  // console.log(animalTypes);
+  // console.log(currentBreeds.breeds[0]);
 
   const showBreedLi = currentBreeds.breeds.map((currBreed) => {
     return <p>{currBreed.name}</p>;
