@@ -105,9 +105,9 @@ class DesktopContainer extends Component {
                 <Menu.Item position='' as='a' active>
                   Home
                 </Menu.Item>
-               {/* <Menu.Item as='a' active>Organizations</Menu.Item>*/}
-               <Menu.Item as='a' active>Organizations</Menu.Item>
-   {/* <Menu.Item as='a'>Careers</Menu.Item>*/}
+               <Menu.Item as='a' active>Animals</Menu.Item>
+           <Menu.Item as='a' active>Organizations</Menu.Item>
+   {/* <Menu.Item as='a'></Menu.Item>*/}
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
                     Search
@@ -289,7 +289,7 @@ Animal collection comes here
               <Header inverted as='h4' content='About'/>
               <List link inverted>
                 <List.Item as='a'></List.Item>
-                <List.Item as='a'>Contact Us</List.Item>
+                <List.Item as='a'>Contact </List.Item>
                 <List.Item as='a'></List.Item>
                 <List.Item as='a'></List.Item>
               </List>
