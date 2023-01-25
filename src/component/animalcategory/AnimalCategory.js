@@ -11,20 +11,12 @@ function AnimalCategory({
   // console.log(currentBreeds.breeds[0]);
 
   const showBreedLi = currentBreeds.breeds.map((currBreed) => {
-    return (
-      <div>
-        <div className="container mt-4" >
-          <ul className="list-group">
-            <li className="list-group-item">{currBreed.name}</li>
-          </ul>
-        </div>
-      </div>
-    );
+    return <p>{currBreed.name}</p>;
   });
 
   const animalTypeBtn = animalTypes.types.map((animalType, index) => {
     return (
-      <li key={"type" + index} id= "Cat">
+      <li key={"type" + index}>
         <button onClick={(e) => setType(e.target.innerText)}>
           {" "}
           {animalType.name}{" "}
