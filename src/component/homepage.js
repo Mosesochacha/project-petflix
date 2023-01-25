@@ -3,6 +3,7 @@ import { createMedia } from '@artsy/fresnel'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 
+
 import {
   Button,
   Container,
@@ -104,11 +105,6 @@ class DesktopContainer extends Component {
                 <Menu.Item position='' as='a' active>
                   Home
                 </Menu.Item>
-               {/* <Menu.Item as='a' active>Organizations</Menu.Item>*/}
-               <Menu.Item as='a' active>Organizations</Menu.Item>
-               <Menu.Item as='a' active>Animals</Menu.Item>
-
-   {/* <Menu.Item as='a'>Careers</Menu.Item>*/}
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
                     Search
@@ -281,17 +277,18 @@ Animal collection comes here
 
   {/*fooooter*/}
 
-    <Segment inverted vertical style={{ padding: '5em 0em' }}>
+    <Segment inverted vertical style={{ padding: '3em 0em', textAlign: 'centre' }}>
       <Container>
+        <div className='container'>
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
-              <Header inverted as='h4' content='About' />
+              <Header inverted as='h4' content='About'/>
               <List link inverted>
-                <List.Item as='a'>Sitemap</List.Item>
-                <List.Item as='a'>Contact Us</List.Item>
-                <List.Item as='a'>Religious Ceremonies</List.Item>
-                <List.Item as='a'>Gazebo Plans</List.Item>
+                <List.Item as='a'></List.Item>
+                <List.Item as='a'>Contact </List.Item>
+                <List.Item as='a'></List.Item>
+                <List.Item as='a'></List.Item>
               </List>
             </Grid.Column>
           {/*  <Grid.Column width={3}>
@@ -303,16 +300,10 @@ Animal collection comes here
                 <List.Item as='a'>Favorite X-Men</List.Item>
 </List>
 </Grid.Column>*/}
-            <Grid.Column width={7}>
-              <Header as='h4' inverted>
-                Footer Header
-              </Header>
-              <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
-              </p>
-            </Grid.Column>
+          
           </Grid.Row>
         </Grid>
+        </div>
       </Container>
     </Segment>
   </ResponsiveContainer>
