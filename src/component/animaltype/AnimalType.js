@@ -8,15 +8,26 @@ function AnimalTypes({
   setanimalDetailCurrent,
   setSearchValue,
   searchValue,
+  setSearchType,
+  searchType
 }) {
-  const animalsCard = animals.animals.map((animal, index) => {
-    // animal.photos.map(photo => {
-    //     console.log(photo)
 
-    //     // photo.map(size => {
-    //     //     console.log(size)
-    //     // })
-    // })
+  let filteredAnimals;
+    
+  if(searchType === "breed"){
+    filteredAnimals = (animals.animals).filter((animale) =>
+    animale.breeds.primary.toLowerCase().includes(searchValue.toLowerCase())
+  )
+  }else {
+    filteredAnimals = (animals.animals).filter((animale) =>
+    animale.type.toLowerCase().includes(searchValue.toLowerCase())
+    )
+  };
+
+
+
+
+  const animalsCard = filteredAnimals.map((animal, index) => {
 
     const imageChecker = () => {
       if (animal.primary_photo_cropped) {
@@ -48,7 +59,7 @@ function AnimalTypes({
 
   return (
     <div className="animalDiv">
-      <SearchForm searchValue={searchValue} setSearchValue={setSearchValue} />
+      <SearchForm searchValue={searchValue} setSearchValue={setSearchValue} searchType={searchType} setSearchType={setSearchType}/>
       <ul className="animalCardUl">{animalsCard}</ul>
     </div>
   );

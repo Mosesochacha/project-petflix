@@ -14,20 +14,12 @@ function App() {
   const [type, setType] = useState("dog");
   const [currentBreeds, setCurrentBreeds] = useState([]);
   const [searchValue, setSearchValue] = useState("");
-  const [searchedResult, setSearchedResult] = useState([]);
-
-
-
-
-  //   setSearchedResult(animals.filter((animal) =>
-  //   animal.breeds.primary.toLowerCase().includes(searchValue.toLowerCase())
-  // ))
+  const [searchType, setSearchType] = useState("breed");
 
   // curl -d "grant_type=client_credentials&client_id=TBUWjfxlzXKspuMgyLyTavDjNWaj0hrPRy1x3nFBACqlc6swLs&client_secret=n3x8Phb9OYqLL1rdWtaJFdtn3KUgAmUzYyauP9yz" https://api.petfinder.com/v2/oauth2/token
 
   const token =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJUQlVXamZ4bHpYS3NwdU1neUx5VGF2RGpOV2FqMGhyUFJ5MXgzbkZCQUNxbGM2c3dMcyIsImp0aSI6ImRmYTgzYjU0M2Y5NzAxMzA3YjcxOTViNzBmOGNmYjRhYWQ4ZDlkZjQ2NDRmOWI3M2U2ZjU2YjRjYmYwMDc1MWFlMmUxOWVlMTQ3YjE0ODZhIiwiaWF0IjoxNjc0NjI1ODc2LCJuYmYiOjE2NzQ2MjU4NzYsImV4cCI6MTY3NDYyOTQ3Niwic3ViIjoiIiwic2NvcGVzIjpbXX0.X-RZyTGk9Qi6VdB550v_cdvy-L890iL_GYrW8wpw4kFFzHmFesZm-wmOyji40I5JkKMOOfXRQOiNSfww8M3uMKtdEPs-EtTQMCk4_VhNr4pTsbUictJjBatpmz58atsWYAQG7S8XyAYkRqHeAgMbPAzq3kL5D1MJWQDyceJReTbtIKZC5JsjpLCdxWU3yN-NTO-f-n6naAT7gyU3aCX0_TL4TyNClGuBg6Gg2qQBQ7LlHJesAR9EyrJ6WxaBl-J6UHJVYg533S3R_bEOOsDYQM7PmDNG2J0MG-4QOfdD2-m__SIX9GNcPhRFHPn8xOBPbFEBuFygFcp6f8J6ivI-0Q"
-
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJUQlVXamZ4bHpYS3NwdU1neUx5VGF2RGpOV2FqMGhyUFJ5MXgzbkZCQUNxbGM2c3dMcyIsImp0aSI6IjE0NDFiNzhkNDJiM2U5NDEzODNhMDEyZDhiMjVhN2M1MzcyNDg4ODU5ZDg0NDNjOGQ3NzljNzE0OTQ3OGNhYTg1N2RkYTM0NjgzMWZjYTExIiwiaWF0IjoxNjc0NjMwMzU5LCJuYmYiOjE2NzQ2MzAzNTksImV4cCI6MTY3NDYzMzk1OSwic3ViIjoiIiwic2NvcGVzIjpbXX0.dwuNNsqaLmsFAuc3h9yG8_rEvV_D2EIYYcfUk-dXQB8tPK3QP76zHh0L59fZGmwmJmdiWstHGTcuoRvKBT3BTseF9lKthFRBJWETHI-Ag1GHgFEEabl9S_nPhL1fLWeCnBsoj9Xs6sloEpWwqpNWY3RwMECScB5Lt0c6iZaKywsqlqGNoODQT9-u3YWNK5wkN3F9StuAlEemRvCWHiXtubPuwRSEY2p-e5PKnMfV8cCYVU8BPHOu1_Xu6R0SDY2vgEE82t_CEyQk4DzFxpzPU_2wHCG0OLXKAMGNuGzcBQ2FzG1saB4nojqiCA3lfvlZyrb7570pNb-v5IhwJpWByg";
   useEffect(() => {
     //Animals
     fetch(`https://api.petfinder.com/v2/animals?limit=100`, {
@@ -91,6 +83,8 @@ function App() {
                 currentBreeds={currentBreeds}
                 animals={animals}
                 setanimalDetailCurrent={setanimalDetailCurrent}
+                setSearchType={setSearchType}
+                searchType={searchType}
               />
             }
           />
