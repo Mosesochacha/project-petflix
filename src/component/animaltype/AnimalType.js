@@ -1,7 +1,7 @@
 import React from "react";
 import "./AnimalType.css";
 import { Link } from "react-router-dom";
-import SearchForm from "../search/SearchForm";
+// import SearchForm from "../search/SearchForm";
 
 function AnimalTypes({
   animals,
@@ -48,7 +48,7 @@ function AnimalTypes({
 
   return (
     <div className="animalDiv">
-      <SearchForm searchValue={searchValue} setSearchValue={setSearchValue} />
+      {/* <SearchForm searchValue={searchValue} setSearchValue={setSearchValue} /> */}
       <ul className="animalCardUl">{animalsCard}</ul>
     </div>
   );

@@ -278,8 +278,8 @@ Animal collection comes here
   {/*fooooter*/}
 
     <Segment inverted vertical style={{ padding: '3em 0em', textAlign: 'centre' }}>
-      <Container>
-        <div className='container'>
+      {/* <Container>
+        <div className='container' key={list}>
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
@@ -290,7 +290,7 @@ Animal collection comes here
                 <List.Item as='a'></List.Item>
                 <List.Item as='a'></List.Item>
               </List>
-            </Grid.Column>
+            </Grid.Column> */}
           {/*  <Grid.Column width={3}>
               <Header inverted as='h4' content='Services' />
               <List link inverted>
@@ -301,10 +301,10 @@ Animal collection comes here
 </List>
 </Grid.Column>*/}
           
-          </Grid.Row>
-        </Grid>
-        </div>
-      </Container>
+          {/* </Grid.Row>
+        </Grid> */}
+        {/* </div>
+      </Container> */}
     </Segment>
   </ResponsiveContainer>
 )
