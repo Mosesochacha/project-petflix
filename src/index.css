@@ -28,10 +28,55 @@ code {
 }
 
 .btn{
-  position: absolute;
-  right: 1em;
+  color: blue;
+
+  justify-content: end;
+  /* position: absolute;
   color: blue;
   background-color: azure;
   border: none;
-  cursor: pointer;
+  cursor: pointer; */
 }
+#Toggle{
+    background-color: rebeccapurple;
+    border: 1px 1px solid black;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.Toggle{
+margin-left: -600px;
+border: 1px saddlebrown solid;
+z-index: 1254554545454;
+width: 20em;
+
+}
+.Toggle:hover{
+border: 1px saddlebrown solid;
+z-index: 2254554545454;
+}
+.Toggle:active{
+  border: 1px saddlebrown solid;
+  z-index: 2254554545454;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: yellowgreen;
+  border: 1px saddlebrown solid;
+  z-index: 2254554545454;
+  
+
+}
+.Toggle:focus{
+border: 1px saddlebrown solid;
+z-index: 2254554545454;
+}
+.Toggle:disabled{
+border: 1px saddlebrown solid;
+
+}
+.Toggle:disabled:hover{
+border: 1px saddlebrown solid;}
+.Toggle:disabled:active{
+border: 1px saddlebrown solid;}

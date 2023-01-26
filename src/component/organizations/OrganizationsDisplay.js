@@ -10,12 +10,14 @@ export default function OrganizationDisplay({ newOrganization, setCurrentOrg={se
 
 
   return (
-    <div>
-    
+    <div className="Org">
+
     <div className="container" key={newOrganization.id}>
-      <ul className="list-group">
-        <li className="list-group-item">{newOrganization.name}
-        <Link to= "/orginfo" className="btn" onClick= {() => setCurrentOrg(newOrganization)}> More info</Link>
+  
+      <ul className="card">
+        
+        <li className="List">{newOrganization.name}
+        <Link id="Btn" to= "/orginfo"  onClick= {() => setCurrentOrg(newOrganization)}> More info</Link>
         </li>
       </ul>
      

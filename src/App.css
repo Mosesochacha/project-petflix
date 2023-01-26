@@ -2,9 +2,12 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, ;
 }
 
-
+Link{
+  color: blue;
+}
 
 .App {
   text-align: center;
@@ -54,22 +57,68 @@
   background-color: bisque;
 }
 .App-link {
-  color: #61dafb;
+  color: #e957e2;
 }
 .navbar{
-  background-color: bisque;
-  font-size: 13vh;
+  
+  font-size: 1vh;
   color: aquamarine;
   padding: 20px;
   border-radius: 5px;
   border: none;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-family: Times New Roman, Times, serif;
+  background-color: lightgray;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: none;
+    position: sticky;
+top: 0px;
+z-index: 1;
+}
+.animalDiv{
+  top: 2px;
+
 }
 .container-fluid{
-  font-size: 13vh;
+  font-size: 5vh;
   padding-top: 2px;
   padding-bottom: 1px; 
+  color: blue;
   
 }
+#Container{
 
+  /* background-color: navajowhite; */
+  margin-left: 20em;
+  margin-bottom: 5px;
+ background-color: bisque;
+  color: #000;
+  width: 500px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Times New Roman;
+  font-size: calc(10px + 2vmin);
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  /* lex-direction: row; */
+  overflow-x: scroll;
+  top: 0px;
+  left: 0px;
+}
+
+#Organiz{
+ position: relative;
+ top: 10;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+h1{
+  position: relative;
+  top: 2px;
+}

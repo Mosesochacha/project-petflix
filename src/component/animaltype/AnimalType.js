@@ -3,6 +3,7 @@ import "./AnimalType.css";
 import { Link } from "react-router-dom";
 import SearchForm from "../search/SearchForm";
 
+
 function AnimalTypes({
   animals,
   setanimalDetailCurrent,
@@ -59,6 +60,7 @@ function AnimalTypes({
 
   return (
     <div className="animalDiv">
+
       <SearchForm searchValue={searchValue} setSearchValue={setSearchValue} searchType={searchType} setSearchType={setSearchType}/>
       <ul className="animalCardUl">{animalsCard}</ul>
     </div>

@@ -4,33 +4,39 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="container-fluid" >
-        <Link className="navbar-brand" to="/">Home</Link>
-        
-        <Link className="navbar-brand" to="/animals/">Animals</Link>
-      
-      <Link className="navbar-brand"  to="/organizations">Organizations</Link>
-      
-      <Link className="navbar-brand" to="/categories">Animal Catergories</Link>
+      <div className="container-fluid">
+        <Link className="Link" to="/">
+          Home
+        </Link>
 
-      <Link className="navbar-brand" to="/login">LOG OUT</Link>
+        <Link className="Link" to="/animals/">
+          Animals
+        </Link>
 
+        <Link className="LInk" to="/organizations">
+          Organizations
+        </Link>
+
+        <Link className="Link" to="/categories">
+          Animal Catergories
+        </Link>
+
+        <Link className="Link" to="/login">
+          LOG OUT
+        </Link>
+        <form class="d-flex" role="search">
+          <input
+            className="form-control me-4"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button className="btn btn-outline-success me-2" type="submit">
+            Search
+          </button>
+        </form>
       </div>
-      
-    
-    
     </nav>
-
-
-// <nav class="navbar bg-body-tertiary">
-//   <div class="container-fluid">
-//   <a class="navbar-brand">Navbar</a>
-//   <form class="d-flex" role="search">
-//     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-//     <button class="btn btn-outline-success" type="submit">Search</button>
-//   </form>
-// </div>
-// </nav>
   );
 }
 

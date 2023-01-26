@@ -21,11 +21,10 @@ function App() {
   const [searchType, setSearchType] = useState("breed");
   const [currentOrg, setCurrentOrg] = useState([]);
 
-
   // curl -d "grant_type=client_credentials&client_id=JR7QqRdCS6caomT7MDOE9YADIJE5deimh6Pehym4QAORyofI9M&client_secret=cDYMVWV8rJw6BAb2hLoqXmbTZPk5vLkmX2IKyEvU" https://api.petfinder.com/v2/oauth2/token
 
   const token =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJKUjdRcVJkQ1M2Y2FvbVQ3TURPRTlZQURJSkU1ZGVpbWg2UGVoeW00UUFPUnlvZkk5TSIsImp0aSI6IjM5NTRjZmQ1NTFiZmRmNmQ4MWU3YjAwYmNhNTU5YzEzNDk2YzhiZmJjMjdmNzU3OWM0N2FjNDVkMGQ4MTMxMTc4ZjBjZjEzNjRmZjZmZjExIiwiaWF0IjoxNjc0NzA1MjMzLCJuYmYiOjE2NzQ3MDUyMzMsImV4cCI6MTY3NDcwODgzMywic3ViIjoiIiwic2NvcGVzIjpbXX0.TsHjHNdPIw_g4oMH-Jj9KRPJSeNRa3wHRhgZQbaQdy5LRP1qn-yc8MPOeVEMM1mZNhCaqAnXbdrO4r1RbH08RbPYjPFPBIRIaKBfOvLsvF4ReoCX2bfY66OHG2_sK_Nl1oHgmrJt7gFQMjf3hNUSWxelFLikBMJ5mqVgyd42pm8lJPm7UFW4GI396ulS7nkqSj5o29VR3LnoR2uMz1veSrwBSTKa75RkFSDG2yfQt90XypeVZm15Vp4DHT_NPPB7QbwpfyOA6paVnMy18P5E5O-Y42LtnhVg1mDp_oOEG7DTumsM-fGqanWBnTsFIUf_g0ECNsBsUe61zAdPTPy5Pg"  
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJKUjdRcVJkQ1M2Y2FvbVQ3TURPRTlZQURJSkU1ZGVpbWg2UGVoeW00UUFPUnlvZkk5TSIsImp0aSI6ImFjM2ZhNmVmN2YyMDc4MjBiZWRiMjgxYWEyOWIzMjRhNjc5ZGYxYTI0ZTc1OThmNGY1ZDc0N2I1MjBkYzVmNDUyOWNhYTYxOTM2ZjRkN2I3IiwiaWF0IjoxNjc0NzQzMzUyLCJuYmYiOjE2NzQ3NDMzNTIsImV4cCI6MTY3NDc0Njk1Miwic3ViIjoiIiwic2NvcGVzIjpbXX0.qlpUsmdxs-09F6-rK9JuX1wcC-C2Sfg-yZSaQMcpybbq8JZyScuYN85qPRl-dTrMjuRXI4N5YMiwHchlqeLkGiGk5nmlWMy-SYjxDk80DwCcV-nzql5tH9jUWt-BzydZVW_2sZDmhmujY3yUJeVyhpu_8sfT2v3ktAa0JG5DVIAVobfPU5Rh5xDnxbS2_UGIHnVu5O5Z75qQYYOa7LNbsuDBqGwrc0rCB7Ulc2gfnrHfLi6CKbwbuThlTR4AwBtQSTFvsMS8l4rl3NuOb7yW688IPw2JN3guHsQFvvxlQKKpFDk_AjC8QBbfdqR1HknT8gtVc2XHpc-FWFkLQF3PyQ";
   useEffect(() => {
     //Animals
     fetch(`https://api.petfinder.com/v2/animals?limit=100`, {
@@ -75,14 +74,19 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-
-
-
         <Routes>
-        <Route exact path='/register' element={< SignUp />}/>
-        <Route exact path='/login' element={<LogIn/>}/>
-          <Route exact path="/orginfo" element={< AboutOrg currentOrg={currentOrg}/>} />
-          <Route exact path="/organizations" element={< Organization setCurrentOrg={setCurrentOrg}/>} />
+          <Route exact path="/register" element={<SignUp />} />
+          <Route exact path="/login" element={<LogIn />} />
+          <Route
+            exact
+            path="/orginfo"
+            element={<AboutOrg currentOrg={currentOrg} />}
+          />
+          <Route
+            exact
+            path="/organizations"
+            element={<Organization setCurrentOrg={setCurrentOrg} />}
+          />
           <Route exact path="/" element={<HomepageLayout />} />
           <Route
             exact

@@ -19,8 +19,10 @@ function SearchForm({
           setSearchType(e.target.value);
         }}
       >
+        <optgroup label="Search By:">
         <option value="breed">Breed</option>
         <option value="type">Type</option>
+        </optgroup>
       </select>
       <input
         type="search"
