@@ -54,3 +54,7 @@
     text-transform: capitalize;
     color: #000;
    }
+   #Btn{
+position: absolute;
+right: 1em;
+   }
