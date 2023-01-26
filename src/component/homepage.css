@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.landingDiv{
+    position: absolute;
+    top: 0px;
+    background-image: url(../../public/ss.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
+}
+
+.homepageLinks{
+    margin: 10px;
+    padding : 10px;
+    font-size: large;
+    color: orangered;
+    background-color: burlywood;
+    border-radius: 10px;
+    float: right;
+}
+
+.insideHomePage{
+    background-color: rgba(240, 233, 233, 0.6);
+    width: 85%;
+    margin: 10px auto;
+    border-radius: 12px;
+    padding: 20px;
+    /* list-style-type:none; */
+}
+
+ .missionDiv{
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+    margin: 10px auto;
+    font-size: 17px;
+    font-weight: 500;
+
+
+}
+
+
+.testLi:nth-child(even){
+    text-align: right;
+    padding: 10px;
+}
+
+.testLi:nth-child(odd){
+    text-align: left;
+    padding: 20px;
+
+}
+
+.testUl{
+    color: white;
+    background-color: rgba(27, 27, 27, 0.6);
+    border-radius: 12px;
+    padding: 10px;
+
+}
