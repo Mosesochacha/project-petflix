@@ -11,7 +11,7 @@ function AnimalCategory({
   console.log(currentBreeds.breeds[0]);
 
   const showBreedLi = currentBreeds.breeds.map((currBreed) => {
-    return <p>{currBreed.name}</p>;
+    return <p key={"man" + currBreed.name}>{currBreed.name}</p>;
   });
 
   const animalTypeBtn = animalTypes.types.map((animalType, index) => {
