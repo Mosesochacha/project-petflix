@@ -76,6 +76,8 @@ Link{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  position: relative;
+  top: 0;
   
 }
 #Cat{
@@ -98,6 +100,7 @@ Link{
   width: 100%;
   margin-bottom: 20px;
   box-shadow: none;
+  position: sticky;
 
 }
 .animalDiv{

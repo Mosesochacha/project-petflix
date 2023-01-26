@@ -10,11 +10,11 @@ function AnimalCategory({
   console.log(animalTypes);
   console.log(currentBreeds.breeds[0]);
 
-  const showBreedLi = currentBreeds.breeds.map((currBreed) => {
+  const showBreedLi = currentBreeds.breeds.map((currBreed , index) => {
     return (
-      <div className="card  " id="Container">
+      <div className="card  " id="Container" key={ currBreed + index}>
         <ul className=" Category " id="Category">
-          <li className="list-group-item " bg-warning>
+          <li className="list-group-item ">
             {currBreed.name}
           </li>
         </ul>
@@ -24,7 +24,7 @@ function AnimalCategory({
 
   const animalTypeBtn = animalTypes.types.map((animalType, index) => {
     return (
-      <ul key={"type" + index} className = "Toggle">
+      <ul key={"type" + index} className = "Toggle" >
         <p onClick={(e) => setType(e.target.innerText)}>
           {" "}
           {animalType.name}{" "}
@@ -34,22 +34,22 @@ function AnimalCategory({
   });
 
   return (
-    <div>
-      <div class="btn-group" id="Toggle">
-        <button type="button" class="btn btn-danger">
+    <div key={animalTypes.index}>
+      <div className="btn-group" id="Toggle" >
+        <button type="button" className="btn btn-danger">
           Action
         </button>
         <button
           type="button"
-          class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+          className="btn btn-danger dropdown-toggle dropdown-toggle-split"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <span class="visually-hidden">Toggle Dropdown</span>
+          <span className="visually-hidden">Toggle Dropdown</span>
         </button>
-        <ul class="dropdown-menu">
+        <ul className="dropdown-menu">
           <li>
-            <a class="dropdown-item" href="#">
+            <a className="dropdown-item" href="#">
               {animalTypeBtn}
             </a> 
           </li><hr/>
