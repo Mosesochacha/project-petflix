@@ -2,10 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function AnimalDetails({ animalDetailCurrent }) {
-//   console.log(animalDetailCurrent);
+  const imageChecker = () => {
+    if (animalDetailCurrent.primary_photo_cropped) {
+      return (
+        <img
+          src={animalDetailCurrent.primary_photo_cropped.small}
+          alt="animal"
+        />
+      );
+    } else {
+      return <p>No Image</p>;
+    }
+  };
+
+  //   console.log(animalDetailCurrent);
   return (
     <div>
-      {/* <img src={animal.primary_photo_cropped.full} alt="animal"/> */}
+      {imageChecker()}
       <h1>Name:{animalDetailCurrent.name}</h1>
       <h3>Breed: {animalDetailCurrent.breeds.primary}</h3>
       <h3>Age: {animalDetailCurrent.age}</h3>
