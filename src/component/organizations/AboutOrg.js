@@ -17,7 +17,7 @@ function AboutOrg({ currentOrg }) {
         <p className="card-text"> City :{currentOrg.address.city}</p>
         <p className="card-text"> Country :{currentOrg.address.country}</p>
         <p className="card-text"> PostCode:{currentOrg.address.postcode}</p>
-        <a target="_blank" href={currentOrg.url}>
+        <a target="_blank" rel="noreferrer" href={currentOrg.url}>
           Get more
         </a>{" "}
         <br />
