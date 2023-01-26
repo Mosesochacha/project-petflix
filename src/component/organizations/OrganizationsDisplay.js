@@ -17,7 +17,7 @@ export default function OrganizationDisplay({ newOrganization, setCurrentOrg={se
       <ul className="card">
         
         <li className="List">{newOrganization.name}
-        <Link id="Btn" to= "/orginfo"  onClick= {() => setCurrentOrg(newOrganization)}> More info</Link>
+        <Link id="Btn"  to= "/orginfo"  onClick= {() => setCurrentOrg(newOrganization)}> More info</Link>
         </li>
       </ul>
      

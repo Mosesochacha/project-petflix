@@ -9,7 +9,7 @@ function Navbar() {
           Home
         </Link>
 
-        <Link className="Link" to="/animals/">
+        <Link className="Link" to="/animals">
           Animals
         </Link>
 
@@ -24,7 +24,7 @@ function Navbar() {
         <Link className="Link" to="/login">
           LOG OUT
         </Link>
-        <form class="d-flex" role="search">
+        <form className="d-flex" role="search">
           <input
             className="form-control me-4"
             type="search"

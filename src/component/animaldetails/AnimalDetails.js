@@ -17,14 +17,15 @@ function AnimalDetails({ animalDetailCurrent }) {
 
   //   console.log(animalDetailCurrent);
   return (
-    <div>
+    <div className="card"   id="Details">
+
       {imageChecker()}
-      <h1>Name:{animalDetailCurrent.name}</h1>
-      <h3>Breed: {animalDetailCurrent.breeds.primary}</h3>
-      <h3>Age: {animalDetailCurrent.age}</h3>
-      <p>
+      <h1 style={{"margin-botom":"0"}}>Name:{animalDetailCurrent.name}</h1>
+      <h3 style={{"margin":"0" , "padding-top":"0"}}>Breed: {animalDetailCurrent.breeds.primary}</h3>
+      <h3   style={{"margin":"0" , "padding-top":"0"}}>Age: {animalDetailCurrent.age}</h3>
+      <p   style={{"margin":"0" , "padding-top":"0"}}>
         Contact:{" "}
-        <a
+        <a   style={{"margin":"0" , "padding-top":"0"}}
           target="_blank"
           rel="noreferrer"
           href={`mailto:${animalDetailCurrent.contact.email}`}
@@ -33,15 +34,17 @@ function AnimalDetails({ animalDetailCurrent }) {
           {animalDetailCurrent.contact.email}
         </a>
       </p>
-      <h2>About {animalDetailCurrent.name}</h2>
-      <p>{animalDetailCurrent.description}</p>
-      <p>Species: {animalDetailCurrent.species}</p>
-      <p>Status: {animalDetailCurrent.status}</p>
-      <p>Gender: {animalDetailCurrent.gender}</p>
+      <h2 className="about"  style={{"margin":"0" , "padding-top":"0"}}>About {animalDetailCurrent.name}</h2>
+      <p style={{"margin":"0" , "padding-top":"0"}}>{animalDetailCurrent.description}</p>
+      <p style={{"margin":"0" , "padding-top":"0"}}>Species: {animalDetailCurrent.species}</p>
+      <p style={{"margin":"0" , "padding-top":"0"}}>Status: {animalDetailCurrent.status}</p>
+      <p style={{"margin":"0" , "padding-top":"0"}}>Gender: {animalDetailCurrent.gender}</p>
 
-      <Link to="/animals">BACK</Link>
+      <Link to="/animals" style={{"margin":"0" , "padding-top":"0"}}>BACK</Link>
+         
     </div>
   );
 }
+
 
 export default AnimalDetails;
