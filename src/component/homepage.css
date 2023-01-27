@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
 
-.landingDiv{
+.landingDiv {
     position: absolute;
     top: 0px;
     background-image: url(../../public/ss.jpg);
@@ -17,9 +17,9 @@
     min-height: 100%;
 }
 
-.homepageLinks{
+.homepageLinks {
     margin: 10px;
-    padding : 10px;
+    padding: 10px;
     font-size: large;
     color: orangered;
     background-color: burlywood;
@@ -27,7 +27,7 @@
     float: right;
 }
 
-.insideHomePage{
+.insideHomePage {
     background-color: rgba(240, 233, 233, 0.6);
     width: 85%;
     margin: 10px auto;
@@ -36,7 +36,7 @@
     /* list-style-type:none; */
 }
 
- .missionDiv{
+.missionDiv {
     width: 70%;
     text-align: center;
     padding: 20px;
@@ -48,21 +48,130 @@
 }
 
 
-.testLi:nth-child(even){
+.testLi:nth-child(even) {
     text-align: right;
     padding: 10px;
 }
 
-.testLi:nth-child(odd){
+.testLi:nth-child(odd) {
     text-align: left;
     padding: 20px;
 
 }
 
-.testUl{
+.testUl {
     color: white;
     background-color: rgba(27, 27, 27, 0.6);
     border-radius: 12px;
     padding: 10px;
 
 }
+
+
+/* NAvBar Styling */
+
+.navUl {
+    text-decoration: none;
+    width: 100%;
+    background-color: gray;
+    min-height: 70px;
+    /* border-bottom:  thick solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    /* flex-basis: auto; */
+}
+
+.Linker {
+    width: 15%;
+    color: #00008B;
+    border-right: thin solid black;
+    height: 100%;
+    font-size: 18px;
+
+}
+
+
+
+
+/* end NavBar styling */
+
+
+/* searchForm */
+
+.formSearch {
+    padding: 20px;
+}
+
+.searchTyped {
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+
+/* end searchForm */
+
+
+
+/* start AnimalDetails */
+.cardDetails {
+    background-color: gray;
+    width: 80%;
+    margin: 10px auto;
+    min-height: 500px;
+    text-align: left;
+    padding-top: 40px;
+
+}
+
+.imgDetail {
+    float: left;
+    margin-left: 30px;
+}
+
+.cardDetails b {
+    padding-left: 10px;
+}
+
+.linkerBack {
+    text-decoration: none;
+    border: thin solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: orange;
+    padding: 5px;
+}
+
+
+/*  end AnimalDetails*/
+
+
+
+/* org */
+
+
+.CardOrg {
+    background-color: #D3D3D3;
+}
+
+/* end org */
+
+
+/* start animalCategories */
+
+.fine {
+    margin: 20px;
+}
+
+
+
+.allBreeds {
+    background-color: #D3D3D3;
+
+}
+
+
+/* end AnimalCategories */

@@ -1,29 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as NavLink } from "react-router-dom";
+import "./homepage.css";
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="container-fluid">
+    <nav className="navUl">
+      {/* <div className="navDivInUl"> */}
 
+      <NavLink className="Linker" to="/animals">
+        Animals
+      </NavLink>
 
-        <Link className="Link" to="/animals">
-          Animals
-        </Link>
+      <NavLink className="Linker" to="/organizations">
+        Organizations
+      </NavLink>
 
-        <Link className="LInk" to="/organizations">
-          Organizations
-        </Link>
+      <NavLink className="Linker" to="/categories">
+        Animal Catergories
+      </NavLink>
 
-        <Link className="Link" to="/categories">
-          Animal Catergories
-        </Link>
+      <NavLink className="Linker" to="/">
+        LOG OUT
+      </NavLink>
 
-        <Link className="Link" to="/">
-          LOG OUT
-        </Link>
-
-      </div>
+      {/* </div> */}
     </nav>
   );
 }

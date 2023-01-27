@@ -24,10 +24,9 @@ function App() {
   // curl -d "grant_type=client_credentials&client_id=JR7QqRdCS6caomT7MDOE9YADIJE5deimh6Pehym4QAORyofI9M&client_secret=cDYMVWV8rJw6BAb2hLoqXmbTZPk5vLkmX2IKyEvU" https://api.petfinder.com/v2/oauth2/token
 
   const token =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJKUjdRcVJkQ1M2Y2FvbVQ3TURPRTlZQURJSkU1ZGVpbWg2UGVoeW00UUFPUnlvZkk5TSIsImp0aSI6IjZhYWRmMmY2NWFkZTIwMDI0ZmUxMzI3MzI0NmU0Yjg2N2QyNDdkMzZmNmZlMzI3OTA2ZGM1YzVjZWE2NTBkYmUzOGI4M2JhZDUxYTY0OTE1IiwiaWF0IjoxNjc0NzYwNTMyLCJuYmYiOjE2NzQ3NjA1MzIsImV4cCI6MTY3NDc2NDEzMiwic3ViIjoiIiwic2NvcGVzIjpbXX0.aYtx45I2vtQEOfth2mWx99n883GjrZLMBwDFyXBQ0qoxbX5fUGJ4EG1VJSTAk7hiuxhH3aLIXl6zWoeZjAWFwc4enSiEAoeUdgXiJOrs-A4ffQ6Ypy0a50ULDu74L4fvTdX3yQ7nA0RovuddJ5CAGK77PGN1ZNPnchzSXwv-mw07qMqvg_MZHQ3vmPG1zxkTKJeLVLcCZE0cFFv_uLeE2L_Oa3r_RYovQZZEiqgisfsHlJhwAPLfDSv8_i1hQ3g0UgUf9PSVhF0SX1IKBJLH5jMsnxWSYWV5TWhIZ4M51v-vwjoLNPcshWsx3LdtyhHMQkPKjvdFFzbILcQPipIzYw"  
-  
-  
-    useEffect(() => {
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJUQlVXamZ4bHpYS3NwdU1neUx5VGF2RGpOV2FqMGhyUFJ5MXgzbkZCQUNxbGM2c3dMcyIsImp0aSI6IjM3ZjMwZjFhZDY4MDIzNTAwNjNjZDQ4YzViNjNiZjE1ZTZjZDE5ZGE2NGVjOTdjZTJjNjQ0MjYyYmM5YzAyZmE1NzBkZGUzMmFiZGFjY2EyIiwiaWF0IjoxNjc0Nzg3OTg4LCJuYmYiOjE2NzQ3ODc5ODgsImV4cCI6MTY3NDc5MTU4OCwic3ViIjoiIiwic2NvcGVzIjpbXX0.twoJcz9kD91TTsy7FYBpPacV897KZuheiXopv9oY2cwnH1Z50pvFl2Stc0GdsZwVdfSEV4mdTuo0IDED0bPipmSiTrPju3QNZjNV_FkBkwb6251IKzWMrgFLYrLFF1f97m-Rnyv0Rx3PZ-I6kdP5-YzP9XKGbWNqBLbMMOnfP1IkaiuVV7dNCjbenqbFkqlIkmWHjiiOMuamrYHkAavHAULGjkUnRFn1t7YsWoZrpWbwsBGuRYjSvk679SGBV6AGtFLx9-Gz1G0lDonLq_npHNJAqMAn3UxwCc5vBDL0cF_UxaUDt9GzJjHb84o76vYFxZHkHDxEKbSOhyDA3pl-6w";
+
+  useEffect(() => {
     //Animals
     fetch(`https://api.petfinder.com/v2/animals?limit=100`, {
       method: "GET",
@@ -117,7 +116,7 @@ function App() {
             path="/categories"
             element={
               <AnimalCategory
-              key={animalTypes.index}
+                key={animalTypes.index}
                 animalTypes={animalTypes}
                 setType={setType}
                 currentBreeds={currentBreeds}

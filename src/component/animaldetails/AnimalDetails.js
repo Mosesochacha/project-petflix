@@ -1,31 +1,41 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "../homepage.css";
 
 function AnimalDetails({ animalDetailCurrent }) {
   const imageChecker = () => {
     if (animalDetailCurrent.primary_photo_cropped) {
       return (
         <img
+          className="imgDetail"
           src={animalDetailCurrent.primary_photo_cropped.small}
           alt="animal"
         />
       );
     } else {
-      return <p>No Image</p>;
+      return <p className="imgDetail">No Image</p>;
     }
   };
 
   //   console.log(animalDetailCurrent);
   return (
-    <div className="card"   id="Details">
-
+    <div className="cardDetails" id="Details">
       {imageChecker()}
-      <h1 style={{"marginBottom":"0"}}>Name:{animalDetailCurrent.name}</h1>
-      <h3 style={{"margin":"0" , "paddingTop":"0"}}>Breed: {animalDetailCurrent.breeds.primary}</h3>
-      <h3   style={{"margin":"0" , "paddingTop":"0"}}>Age: {animalDetailCurrent.age}</h3>
-      <p   style={{"margin":"0" , "paddingTop":"0"}}>
-        Contact:{" "}
-        <a   style={{"margin":"0" , "paddingTop":"0"}}
+      <p>
+        <b>Name:</b>
+        {animalDetailCurrent.name} <b>Breed:</b>{" "}
+        {animalDetailCurrent.breeds.primary} <b>Age:</b>{" "}
+        {animalDetailCurrent.age}
+      </p>
+      <p>
+        <b>Species:</b> {animalDetailCurrent.species} <b>Status:</b>{" "}
+        {animalDetailCurrent.status} <b>Gender:</b> {animalDetailCurrent.gender}
+      </p>
+
+      <p>
+        <b>Contact: </b>
+        <a
+          style={{ textDecoration: "none", color: "blue" }}
           target="_blank"
           rel="noreferrer"
           href={`mailto:${animalDetailCurrent.contact.email}`}
@@ -34,17 +44,23 @@ function AnimalDetails({ animalDetailCurrent }) {
           {animalDetailCurrent.contact.email}
         </a>
       </p>
-      <h2 className="about"  style={{"margin":"0" , "paddingTop":"0"}}>About {animalDetailCurrent.name}</h2>
-      <p style={{"margin":"0" , "paddingTop":"0"}}>{animalDetailCurrent.description}</p>
-      <p style={{"margin":"0" , "paddingTop":"0"}}>Species: {animalDetailCurrent.species}</p>
-      <p style={{"margin":"0" , "paddingTop":"0"}}>Status: {animalDetailCurrent.status}</p>
-      <p style={{"margin":"0" , "paddingTop":"0"}}>Gender: {animalDetailCurrent.gender}</p>
 
-      <Link to="/animals" style={{"margin":"0" , "paddingTop":"0"}}>BACK</Link>
-         
+      <p></p>
+      <p></p>
+      <p>
+        <b>About:</b> {animalDetailCurrent.name}
+      </p>
+      <p>{animalDetailCurrent.description}</p>
+
+      <NavLink
+        className="linkerBack"
+        to="/animals"
+        style={{ margin: "0", paddingTop: "0" }}
+      >
+        BACK
+      </NavLink>
     </div>
   );
 }
-
 
 export default AnimalDetails;

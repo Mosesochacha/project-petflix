@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.container{
+.container {
   text-align: start;
   margin: 0 auto;
   max-width: 960px;
@@ -23,11 +23,11 @@ code {
   font-size: 16px;
 }
 
-.list-group{
+.list-group {
   position: relative;
 }
 
-.btn{
+.btn {
   color: blue;
 
   justify-content: end;
@@ -37,26 +37,30 @@ code {
   border: none;
   cursor: pointer; */
 }
-#Toggle{
-    background-color: rebeccapurple;
-    border: 1px 1px solid black;
-    cursor: pointer;
-    position: sticky;
-    top: 0;
-    left: 0;
+
+#Toggle {
+  background-color: rebeccapurple;
+  border: 1px 1px solid black;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
-.Toggle{
-margin-left: -600px;
-border: 1px saddlebrown solid;
-z-index: 1254554545454;
-width: 20em;
+
+.Toggle {
+  margin-left: -600px;
+  border: 1px saddlebrown solid;
+  z-index: 1254554545454;
+  width: 20em;
 
 }
-.Toggle:hover{
-border: 1px saddlebrown solid;
-z-index: 2254554545454;
+
+.Toggle:hover {
+  border: 1px saddlebrown solid;
+  z-index: 2254554545454;
 }
-.Toggle:active{
+
+.Toggle:active {
   border: 1px saddlebrown solid;
   z-index: 2254554545454;
   position: sticky;
@@ -65,18 +69,24 @@ z-index: 2254554545454;
   background-color: yellowgreen;
   border: 1px saddlebrown solid;
   z-index: 2254554545454;
-  
+
 
 }
-.Toggle:focus{
-border: 1px saddlebrown solid;
-z-index: 2254554545454;
+
+.Toggle:focus {
+  border: 1px saddlebrown solid;
+  z-index: 2254554545454;
 }
-.Toggle:disabled{
-border: 1px saddlebrown solid;
+
+.Toggle:disabled {
+  border: 1px saddlebrown solid;
 
 }
-.Toggle:disabled:hover{
-border: 1px saddlebrown solid;}
-.Toggle:disabled:active{
-border: 1px saddlebrown solid;}
+
+.Toggle:disabled:hover {
+  border: 1px saddlebrown solid;
+}
+
+.Toggle:disabled:active {
+  border: 1px saddlebrown solid;
+}

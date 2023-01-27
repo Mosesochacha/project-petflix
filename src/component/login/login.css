@@ -1,4 +1,4 @@
-.formDiv{
+.formDiv {
     position: absolute;
     top: 0px;
     background-image: url(../../../public/ss.jpg);
@@ -12,7 +12,7 @@
 
 
 
-.loginDiv{
+.loginDiv {
 
     width: 100%;
     min-height: 90%;
@@ -23,28 +23,27 @@
 }
 
 
-.logInForm{
+.logInForm {
     background-color: rgba(27, 27, 27, 0.7);
-        width: 30%;
-        height: 400px;
-        text-align: center;
-        padding-top: 50px;
-        border-radius: 12px;
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 12px;
 }
 
-.logInForm label{
+.logInForm label {
     padding: 20px;
     font-weight: bolder;
     font-size: 20px;
 }
 
-.logInForm input{
+.logInForm input {
     border-radius: 10px;
     padding: 10px;
 }
 
-.logInForm input[type=submit]{
+.logInForm input[type=submit] {
     background-color: rgb(255, 87, 51);
     color: white;
 }
-

@@ -3,38 +3,32 @@ import "./AnimalType.css";
 import { Link } from "react-router-dom";
 import SearchForm from "../search/SearchForm";
 
-
 function AnimalTypes({
   animals,
   setanimalDetailCurrent,
   setSearchValue,
   searchValue,
   setSearchType,
-  searchType
+  searchType,
 }) {
-
   let filteredAnimals;
-    
-  if(searchType === "breed"){
-    filteredAnimals = (animals.animals).filter((animale) =>
-    animale.breeds.primary.toLowerCase().includes(searchValue.toLowerCase())
-  )
-  }else {
-    filteredAnimals = (animals.animals).filter((animale) =>
-    animale.type.toLowerCase().includes(searchValue.toLowerCase())
-    )
-  };
 
-
-
+  if (searchType === "breed") {
+    filteredAnimals = animals.animals.filter((animale) =>
+      animale.breeds.primary.toLowerCase().includes(searchValue.toLowerCase())
+    );
+  } else {
+    filteredAnimals = animals.animals.filter((animale) =>
+      animale.type.toLowerCase().includes(searchValue.toLowerCase())
+    );
+  }
 
   const animalsCard = filteredAnimals.map((animal, index) => {
-
     const imageChecker = () => {
       if (animal.primary_photo_cropped) {
         return <img src={animal.primary_photo_cropped.small} alt="animal" />;
       } else {
-        return <p>No Image</p>;
+        return <p className="unfortunate">No Image</p>;
       }
     };
 
@@ -42,8 +36,7 @@ function AnimalTypes({
       <li className="animalCardLi" key={"animal" + index}>
         {imageChecker()}
 
-        {/* <img src={animal.primary_photo_cropped.small} alt="animal"/> */}
-        <h3>{animal.name}</h3>
+        <h3 className="restInLi">{animal.name}</h3>
         <h5>{animal.species}</h5>
         <Link
           to="/animaldetail"
@@ -60,8 +53,12 @@ function AnimalTypes({
 
   return (
     <div className="animalDiv">
-
-      <SearchForm searchValue={searchValue} setSearchValue={setSearchValue} searchType={searchType} setSearchType={setSearchType}/>
+      <SearchForm
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}
+        searchType={searchType}
+        setSearchType={setSearchType}
+      />
       <ul className="animalCardUl">{animalsCard}</ul>
     </div>
   );
