@@ -5,10 +5,9 @@ import "./homepage.css";
 function Navbar() {
   return (
     <nav className="navUl">
-      {/* <div className="navDivInUl"> */}
 
       <NavLink className="Linker" to="/animals">
-        Animals
+        Home
       </NavLink>
 
       <NavLink className="Linker" to="/organizations">

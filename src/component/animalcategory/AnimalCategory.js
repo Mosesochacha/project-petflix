@@ -46,7 +46,7 @@ function AnimalCategory({
           </button>
           <ul className="dropdown-menu">
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item">
                 {animalTypeBtn}
               </a>
             </li>

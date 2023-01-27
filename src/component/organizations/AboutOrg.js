@@ -23,7 +23,7 @@ function AboutOrg({ currentOrg }) {
               {currentOrg.email}
             </a>
           </p>
-          <a target="_blank" rel="noreferrer" href={currentOrg.url}></a>
+          <a target="_blank" rel="noreferrer" href={currentOrg.url}>more</a>
           <p className=""> City :{currentOrg.address.city}</p>
           <p className=""> Country :{currentOrg.address.country}</p>
           <p className=""> PostCode:{currentOrg.address.postcode}</p>

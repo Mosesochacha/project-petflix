@@ -1,70 +1,93 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project title
+    Petfinder
+# Getting started
+- In order for you to use the content in this repo ensure you have the following:
+    - Linux
+    - Mac Os
+- To use this repo on your machine you need to clone by either using:
+     - terminal
+     - forking directly from the repo.
+###### Cloning using button labelled forking
+      - click on the the fork button in the top most rigt corner of the github to fork the repo to your own account
+# Installation
+         - Install the npm packages by running the command below;
+                            npm install   
+##  Deployment
+ To view web application click 0n the link below
 
-## Available Scripts
+https://project-petflix.vercel.app/
+ 
+## Running and testing
+Running the application is very straight forward. You can use the following steps to run the app.
 
-In the project directory, you can run:
+- Before testing this application you need to do the following in your terminal:
 
-### `npm start`
+        - first run the command below to start your db.json file;
+        
+            npm install to install npm packages
+               
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        - secondly run the command command below to start the react app.;
+              npm start 
+        - 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###### Test the application by:
+        - First Login by clicking the "Login" button is you already have authenticated
 
-### `npm test`
+        -else if you haven't authenticated signup by clicking the "sign up" button 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ ###       - In the app there is a Navbar which have the following features:
 
-### `npm run build`
+ ######              -Home
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ Onclick it displays the list of all random animals which has a button that redirects the user to more details about the animal selected.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ Has an input that allows the user to search the animals by type or breed
+ ######   Organizations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ onclick it displays the list of all organizations which offers adoption services for animal adoptions.
 
-### `npm run eject`
+ it has a Read More link that redirect the user to get more information about the organization.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ ######   Animal Category
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ On click it opens a page tha has a red button that when a user clicks on it , it displays the animal catigories available for adoptions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    -     When a user clicks on a red button it dispalys a table that has the categories of the animal.
 
-## Learn More
+    -   To view the species per animal  category click the category name in the table and you will see the species available.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#####   Back button
 
-### Code Splitting
+it allows the user to go to the previous page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Description
+   This a petflix  web application where users can get Pets to adopt and organizations where they can adopt.
 
-### Advanced Configuration
+## Contributors
+- Moses Ochacha
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Sammy Cherono
 
-### Deployment
+- Mark Njogu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Apache License 2.0](https://choosealicense.com/licenses/)
+
+
+## Tech Stack
+        - react -app
+        - bootstrap
+        - JavaScript
+        - cascading stylesheets
+
