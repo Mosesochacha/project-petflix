@@ -2,37 +2,39 @@ import axios from "axios";
 import "./Org.css";
 import "../homepage.css";
 
+// import AboutOrg from "./AboutOrg";
 import React, { useEffect, useState } from "react";
 import OrganizationDisplay from "./OrganizationsDisplay";
-<<<<<<< HEAD
 const URL = "https://org-db-file-vercel.vercel.app/organizations";
-=======
-const URL = " https://api.petfinder.com/v2/organizations";
 
-const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJUQlVXamZ4bHpYS3NwdU1neUx5VGF2RGpOV2FqMGhyUFJ5MXgzbkZCQUNxbGM2c3dMcyIsImp0aSI6IjIxNzY3OTEzNWQ1ZDllODg0NDFmMDIyOGJkNjY5MTNkYzUyZDFhNzNlYTc0MjU5MmU0MGU0YzRkZTQ1YWU3MmQyY2IzY2JkNDY2NmZiYmI3IiwiaWF0IjoxNjc0ODAyOTA4LCJuYmYiOjE2NzQ4MDI5MDgsImV4cCI6MTY3NDgwNjUwOCwic3ViIjoiIiwic2NvcGVzIjpbXX0.Bpw2WNdG-lAn7hwXBMtUm1iH4ZtyIPDCNZcVV8EHvNpqdQIsCaOKhprYyIYY7rkf1fvfD929KdrqEB9X032lr-0B46CXxhNkm0Pgqtg0hlXVO6cQJnW8J_Rk3fJhwekHjxHQYdTdY5eTeFEd3AyWmGOvYhcNGsQVwMFPi1mK2wTKclAI8rBy2jXlZYTGjWi4qE875UleMTgGqofVI08vLMLPFFYyfKji_JS48kcwONyRWuTZt3fkLlP_p7EzuQaz37VXUxJ9AhIh_XbkCzRywYvAjD6J-h4Im__6wH7AqjQYo04dDVv8V2wUZGjzy7tlYAmXrn8qZyAcemD2zqLEEQ"
-      
->>>>>>> 526d28f0e1eed1e6b6c1c50f11fcb464037ebcc4
+// const token =
+  // "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJKUjdRcVJkQ1M2Y2FvbVQ3TURPRTlZQURJSkU1ZGVpbWg2UGVoeW00UUFPUnlvZkk5TSIsImp0aSI6IjdkNzlmYmYzODM4ODA5MjI3MGYxZjk3NzM2ZDIzYjNiOWEwYTJhYWI0NjNmZGNkOGU5NmE5M2JlZDc4NDk4ZTgyZGZiMjg1M2I0M2ZmNjQyIiwiaWF0IjoxNjc0OTA4NDY5LCJuYmYiOjE2NzQ5MDg0NjksImV4cCI6MTY3NDkxMjA2OSwic3ViIjoiIiwic2NvcGVzIjpbXX0.dzj0I1igqk5VAVAOdRgUDgpb5Un-3T4cer3LbMMs1sSC_kxRPjDztgQqzBzbH9ALjiMH6EF4YBzrlCPiM5Jocu7iiwUh1qpc7yyhiE1OwueFPmasMIVQIaGcGDzurnNWaeiUrS_MQRSdpNRW8WiB7bFVKKEgxM154-wf51g2JzYMfB2DKCQQXAqzOM8J11cCDTI2m2_uXzqRv7-f2QAZOgaj3r09FnDPjP272H3f4tZC4gTdqHeQJ6s4mkzINy1aPmUrKZephwdFihwgG09hdwH-lEOUutRnYAebib-rf3LFEQDSdbXvJ_42VYKhzzcbsx3OP2EEo0GeNngebbTsZQ";
 
 export default function Organization({ setCurrentOrg }) {
   const [organizations, setOganization] = useState([]);
 
   useEffect(() => {
-    axios.get(URL).then((res) => {
-      setOganization(res.data);
-    });
+    axios.get(URL)
+      .then((res) => {
+        setOganization(res.data);
+      });
   }, []);
+
 
   return (
     <div className="CardOrg">
       <h1>organizations</h1>
       {organizations.map((newOrganization) => {
+        // console.log(newOrganization);
         return (
           <div key={newOrganization.id}>
             <div>
               <OrganizationDisplay
+                //   key={newOrganization.id}
                 newOrganization={newOrganization}
                 setCurrentOrg={setCurrentOrg}
               />
+              {/* <AboutOrg newOrganization={newOrganization} /> */}
             </div>
           </div>
         );

@@ -21,13 +21,7 @@ function App() {
   const [searchType, setSearchType] = useState("breed");
   const [currentOrg, setCurrentOrg] = useState([]);
 
-<<<<<<< HEAD
-=======
-  // curl -d "grant_type=client_credentials&client_id=JR7QqRdCS6caomT7MDOE9YADIJE5deimh6Pehym4QAORyofI9M&client_secret=cDYMVWV8rJw6BAb2hLoqXmbTZPk5vLkmX2IKyEvU" https://api.petfinder.com/v2/oauth2/token
 
-  const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJUQlVXamZ4bHpYS3NwdU1neUx5VGF2RGpOV2FqMGhyUFJ5MXgzbkZCQUNxbGM2c3dMcyIsImp0aSI6IjIxNzY3OTEzNWQ1ZDllODg0NDFmMDIyOGJkNjY5MTNkYzUyZDFhNzNlYTc0MjU5MmU0MGU0YzRkZTQ1YWU3MmQyY2IzY2JkNDY2NmZiYmI3IiwiaWF0IjoxNjc0ODAyOTA4LCJuYmYiOjE2NzQ4MDI5MDgsImV4cCI6MTY3NDgwNjUwOCwic3ViIjoiIiwic2NvcGVzIjpbXX0.Bpw2WNdG-lAn7hwXBMtUm1iH4ZtyIPDCNZcVV8EHvNpqdQIsCaOKhprYyIYY7rkf1fvfD929KdrqEB9X032lr-0B46CXxhNkm0Pgqtg0hlXVO6cQJnW8J_Rk3fJhwekHjxHQYdTdY5eTeFEd3AyWmGOvYhcNGsQVwMFPi1mK2wTKclAI8rBy2jXlZYTGjWi4qE875UleMTgGqofVI08vLMLPFFYyfKji_JS48kcwONyRWuTZt3fkLlP_p7EzuQaz37VXUxJ9AhIh_XbkCzRywYvAjD6J-h4Im__6wH7AqjQYo04dDVv8V2wUZGjzy7tlYAmXrn8qZyAcemD2zqLEEQ"
-
->>>>>>> 526d28f0e1eed1e6b6c1c50f11fcb464037ebcc4
   useEffect(() => {
     fetch(`https://api-petfinder-com.vercel.app/animals`)
       .then((resp) => resp.json())
@@ -51,6 +45,7 @@ function App() {
   }, [type]);
 
   return (
+    // app
     <div className="App">
       <BrowserRouter>
         <Navbar />
