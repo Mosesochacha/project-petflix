@@ -8,10 +8,7 @@ function AnimalCategory({
   searchValue,
   setSearchValue,
 }) {
-  console.log(animalTypes);
-  console.log(currentBreeds.breeds[0]);
-
-  const showBreedLi = currentBreeds.breeds.map((currBreed, index) => {
+  const showBreedLi = currentBreeds.map((currBreed, index) => {
     return (
       <div className="card  " id="Container" key={currBreed + index}>
         <ul className=" Category " id="Category">
@@ -21,7 +18,7 @@ function AnimalCategory({
     );
   });
 
-  const animalTypeBtn = animalTypes.types.map((animalType, index) => {
+  const animalTypeBtn = animalTypes.map((animalType, index) => {
     return (
       <ul key={"type" + index} className="Toggle">
         <p onClick={(e) => setType(e.target.innerText)}> {animalType.name} </p>
@@ -46,9 +43,7 @@ function AnimalCategory({
           </button>
           <ul className="dropdown-menu">
             <li>
-              <a className="dropdown-item">
-                {animalTypeBtn}
-              </a>
+              <button className="dropdown-item">{animalTypeBtn}</button>
             </li>
             <hr />
           </ul>

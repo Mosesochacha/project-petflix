@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -31,11 +31,6 @@ code {
   color: blue;
 
   justify-content: end;
-  /* position: absolute;
-  color: blue;
-  background-color: azure;
-  border: none;
-  cursor: pointer; */
 }
 
 #Toggle {
@@ -48,11 +43,10 @@ code {
 }
 
 .Toggle {
-  margin-left: -600px;
+  margin-left: -500px;
   border: 1px saddlebrown solid;
   z-index: 1254554545454;
   width: 20em;
-
 }
 
 .Toggle:hover {
@@ -69,8 +63,6 @@ code {
   background-color: yellowgreen;
   border: 1px saddlebrown solid;
   z-index: 2254554545454;
-
-
 }
 
 .Toggle:focus {
@@ -80,7 +72,6 @@ code {
 
 .Toggle:disabled {
   border: 1px saddlebrown solid;
-
 }
 
 .Toggle:disabled:hover {

@@ -1,50 +1,43 @@
 .animalDiv {
-    background-color: lightgray;
-    width: 100%;
-    height: 100%;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
 }
-
 
 .animalCardUl {
-    top: 3px;
-    color: black;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 0px auto 0px auto;
-    justify-content: space-around;
-    margin-top: 10px;
-
+  top: 3px;
+  color: black;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0px auto 0px auto;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
-
-
 .animalCardLi {
-    width: 25%;
-    min-height: 400px;
-    top: 2px;
-    border: thin solid gray;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 10px 10px 5px -4px rgba(112, 97, 97, 0.75);
-    border-radius: 10px;
-
+  width: 25%;
+  min-height: 400px;
+  top: 2px;
+  border: thin solid gray;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 5px -4px rgba(112, 97, 97, 0.75);
+  border-radius: 10px;
 }
 
 .animalCardLi img {
-    height: 230px;
-    width: 80%;
-    border-radius: 10px;
+  height: 230px;
+  width: 80%;
+  border-radius: 10px;
 }
 
-
-
 .unfortunate {
-    height: 230px;
-    padding-top: 100px;
+  height: 230px;
+  padding-top: 100px;
 }
 
 .restInLi {
-    border-top: thin solid black;
+  border-top: thin solid black;
 }

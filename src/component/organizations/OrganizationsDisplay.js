@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function OrganizationDisplay({
   newOrganization,
-  setCurrentOrg 
+  setCurrentOrg,
 }) {
-  //console.log(newOrganization);
-
   return (
     <div className="Org">
       <div className="container" key={newOrganization.id}>

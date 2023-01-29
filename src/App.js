@@ -21,53 +21,25 @@ function App() {
   const [searchType, setSearchType] = useState("breed");
   const [currentOrg, setCurrentOrg] = useState([]);
 
-  // curl -d "grant_type=client_credentials&client_id=JR7QqRdCS6caomT7MDOE9YADIJE5deimh6Pehym4QAORyofI9M&client_secret=cDYMVWV8rJw6BAb2hLoqXmbTZPk5vLkmX2IKyEvU" https://api.petfinder.com/v2/oauth2/token
-
-  const token =
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJKUjdRcVJkQ1M2Y2FvbVQ3TURPRTlZQURJSkU1ZGVpbWg2UGVoeW00UUFPUnlvZkk5TSIsImp0aSI6ImM3ZjBhN2Y3Y2IwMGI1Mjc1MjEwNGExZmZjZGRhMDgyZjU4NjA1NDNkNDJmNDA5NTk3ZWI4YjRiYWQ1ZTNkMjI5YTVhMWY1YmRiM2Q5MmE1IiwiaWF0IjoxNjc0Nzk2ODM5LCJuYmYiOjE2NzQ3OTY4MzksImV4cCI6MTY3NDgwMDQzOSwic3ViIjoiIiwic2NvcGVzIjpbXX0.rlTdleHA_66qtgwuGaeqTLWWvP2z5rL9avy40R6ENfurVtAyc-0L6ilzQKAoJQbtFuAoM-hwbmzA98wSaaBWe_WIrF8KbTmWf43kMbKBg7jThx1YAod2A0H30xwc9H3Dg1i_NhIi8-y2U2szc42S8gxM0KAVtivl9mY8mxmcPiEMoPk3Z3bxOqRfLDOBXmO1QqJoHS3tcgKG1RTfqEMF6IrkyP-Ai0Tfmhz950XiYDnyv1InDYrWPDaq-U9fC3Aa7egBe9Z88M0Z3OS6PwzHEKjeUoCPvFcfDBP8PMRjuJ_T07l70hQD35A7gHgq-AZIS_g961T2GOlJ7Q6Dbt7cPg";
-
   useEffect(() => {
-    //Animals
-    fetch(`https://api.petfinder.com/v2/animals?limit=100`, {
-      method: "GET",
-      headers: {
-        "content-type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-    })
+    fetch(`https://api-petfinder-com.vercel.app/animals`)
       .then((resp) => resp.json())
       .then((data) => {
-        // console.log(data);
         setAnimals(data);
       });
 
-    fetch("https://api.petfinder.com/v2/types", {
-      method: "GET",
-      headers: {
-        "content-type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-    })
+    fetch("https://https-api-petfinder-com-v2.vercel.app/types")
       .then((resp) => resp.json())
       .then((data) => {
-        // console.log(data);
-
         setAnimalTypes(data);
       });
   }, []);
 
   useEffect(() => {
-    fetch(`https://api.petfinder.com/v2/types/${type}/breeds`, {
-      method: "GET",
-      headers: {
-        "content-type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-    })
+    fetch(`https://https-api-petfinder-com-v2-breeds.vercel.app/${type}`)
       .then((resp) => resp.json())
       .then((data) => {
         setCurrentBreeds(data);
-        // console.log(data.breeds);
       });
   }, [type]);
 

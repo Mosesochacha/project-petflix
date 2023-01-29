@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import "../homepage.css";
 
 function AboutOrg({ currentOrg }) {
-  console.log(currentOrg._links);
-
   return (
     <div className="eachOrg">
       <div className="About" style={{ width: "40rem" }} key={currentOrg.id}>
@@ -23,7 +21,9 @@ function AboutOrg({ currentOrg }) {
               {currentOrg.email}
             </a>
           </p>
-          <a target="_blank" rel="noreferrer" href={currentOrg.url}>more</a>
+          <a target="_blank" rel="noreferrer" href={currentOrg.url}>
+            more
+          </a>
           <p className=""> City :{currentOrg.address.city}</p>
           <p className=""> Country :{currentOrg.address.country}</p>
           <p className=""> PostCode:{currentOrg.address.postcode}</p>

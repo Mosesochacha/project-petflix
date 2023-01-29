@@ -17,7 +17,6 @@ function AnimalDetails({ animalDetailCurrent }) {
     }
   };
 
-  //   console.log(animalDetailCurrent);
   return (
     <div className="cardDetails" id="Details">
       {imageChecker()}

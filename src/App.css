@@ -2,13 +2,12 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, ;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  /* -webkit-font-feature-settings: 'liga';
-  -moz-font-feature-settings: 'liga=1'; */
+  font-family: "Times New Roman";
 }
 
 Link {
@@ -26,17 +25,13 @@ Link {
   text-align: center;
   font-size: 14px;
   justify-content: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: calc(10px + 2vmin);
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-
-
-
 }
-
 
 .App-logo {
   height: 40vmin;
@@ -79,7 +74,6 @@ Link {
   font-size: calc(10px + 2vmin);
   position: relative;
   top: 0;
-
 }
 
 #Cat {
@@ -91,7 +85,6 @@ Link {
 }
 
 .navbar {
-
   font-size: 1vh;
   color: aquamarine;
   padding: 20px;
@@ -105,12 +98,10 @@ Link {
   margin-bottom: 20px;
   box-shadow: none;
   position: sticky;
-
 }
 
 .animalDiv {
   top: 2px;
-
 }
 
 .container-fluid {
@@ -118,11 +109,9 @@ Link {
   padding-top: 2px;
   padding-bottom: 1px;
   color: blue;
-
 }
 
 #Container {
-
   /* background-color: navajowhite; */
   margin-left: 20em;
   margin-bottom: 5px;
@@ -150,7 +139,6 @@ Link {
   padding-top: 10px;
   padding-bottom: 0px;
   padding-left: 40%;
-
 }
 
 #Organiz {
@@ -164,17 +152,9 @@ Link {
 #Details {
   text-align: center;
   font-family: Times New Roman;
-  /*  */
   position: relative;
   font-size: medium;
-  /* overflow-x: scroll;
-  top: 0px;
-  left: 0px;
-  padding-bottom: 10px;
-  padding-left: 40%;
-  padding-right: 40%; */
-  /* display: flex; */
-  /* lex-direction: row; */
+
   overflow-x: scroll;
 }
 

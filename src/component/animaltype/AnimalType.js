@@ -14,11 +14,11 @@ function AnimalTypes({
   let filteredAnimals;
 
   if (searchType === "breed") {
-    filteredAnimals = animals.animals.filter((animale) =>
+    filteredAnimals = animals.filter((animale) =>
       animale.breeds.primary.toLowerCase().includes(searchValue.toLowerCase())
     );
   } else {
-    filteredAnimals = animals.animals.filter((animale) =>
+    filteredAnimals = animals.filter((animale) =>
       animale.type.toLowerCase().includes(searchValue.toLowerCase())
     );
   }

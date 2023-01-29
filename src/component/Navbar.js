@@ -5,7 +5,6 @@ import "./homepage.css";
 function Navbar() {
   return (
     <nav className="navUl">
-
       <NavLink className="Linker" to="/animals">
         Home
       </NavLink>
@@ -21,8 +20,6 @@ function Navbar() {
       <NavLink className="Linker" to="/">
         LOG OUT
       </NavLink>
-
-      {/* </div> */}
     </nav>
   );
 }
